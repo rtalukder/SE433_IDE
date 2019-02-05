@@ -16,25 +16,26 @@ import java.util.Arrays;
 import java.util.Collection;
 
 @RunWith(Parameterized.class)
-public class LengthConverterParameterizedTests {
+public class LengthConverterParameterizedTests_kmToMi {
     private final double delta = .0001;
+    private final static double kmToMileConversion = 0.621371192;
 
     @Parameters
-    public static Collection<Integer[]> data() {
-        return Arrays.asList(new Integer[][] {
+    public static Collection<Double[]> data() {
+        return Arrays.asList(new Double[][] {
                 // expected, input value
-                {    1,      0 },
-                {    1,      1 },
-                {    2,      2 },
-                {   24,      4 },
-                { 5040,      7 },
+                {    0.0*kmToMileConversion,      0.0 },
+                {   10.0*kmToMileConversion,     10.0 },
+                {  500.0*kmToMileConversion,    500.0 },
+                { 2000.0*kmToMileConversion,   2000.0 },
+                { 5000.0*kmToMileConversion,  10000.0 },
         });
     }
 
-    private long expected; // expected output
-    private int value;     // input value
+    private double expected; // expected output
+    private double value;     // input value
 
-    public LengthConverterParameterizedTests(long expected, int value) {
+    public LengthConverterParameterizedTests_kmToMi(double expected, double value) {
         this.expected = expected;
         this.value = value;
     }

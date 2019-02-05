@@ -58,7 +58,7 @@
                 <artifactId>maven-assembly-plugin</artifactId>
                 <version>3.1.0</version>
                 <configuration>
-                    <finalName>FunctionalTests</finalName>
+                    <finalName>SE433_Homework4_RaquibTalukder</finalName>
                     <appendAssemblyId>false</appendAssemblyId>
                     <descriptorRefs>
                         <descriptorRef>src</descriptorRef>
