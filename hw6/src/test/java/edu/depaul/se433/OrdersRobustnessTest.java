@@ -17,7 +17,7 @@ import java.util.Collection;
 import static edu.depaul.se433.Orders.ShippingMethod;
 
 @RunWith(Parameterized.class)
-public class OrdersTestRobustness {
+public class OrdersRobustnessTest {
     private final double delta = .00001;
 
     @Parameterized.Parameters
@@ -39,7 +39,7 @@ public class OrdersTestRobustness {
     private Orders.ShippingMethod shippingMethod;   // input value
     private String destinationState;                // input value
 
-    public OrdersTestRobustness(double rawTotal, Orders.ShippingMethod shippingMethod, String destinationState) {
+    public OrdersRobustnessTest(double rawTotal, Orders.ShippingMethod shippingMethod, String destinationState) {
         this.rawTotal = rawTotal;
         this.shippingMethod = shippingMethod;
         this.destinationState = destinationState;

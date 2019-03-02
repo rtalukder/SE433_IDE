@@ -16,7 +16,7 @@ import java.util.Arrays;
 import java.util.Collection;
 
 @RunWith(Parameterized.class)
-public class StringUtilTestRobustness {
+public class StringUtilRobustnessTest {
 
     @Parameterized.Parameters
     public static Collection<Object[]> data() {
@@ -30,7 +30,7 @@ public class StringUtilTestRobustness {
     private String expected;
     private String input;
 
-    public StringUtilTestRobustness(String expected, String input){
+    public StringUtilRobustnessTest(String expected, String input){
         this.expected = expected;
         this.input = input;
     }

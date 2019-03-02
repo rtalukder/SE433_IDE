@@ -17,7 +17,7 @@ import java.util.Collection;
 import static edu.depaul.se433.Orders.ShippingMethod;
 
 @RunWith(Parameterized.class)
-public class OrdersTestStrongNormal{
+public class OrdersStrongNormalTest {
     private final double delta = .001;
 
     @Parameterized.Parameters
@@ -41,7 +41,7 @@ public class OrdersTestStrongNormal{
     private Orders.ShippingMethod shippingMethod;   // input value
     private String destinationState;                // input value
 
-    public OrdersTestStrongNormal(double expected, double rawTotal, Orders.ShippingMethod shippingMethod, String destinationState) {
+    public OrdersStrongNormalTest(double expected, double rawTotal, Orders.ShippingMethod shippingMethod, String destinationState) {
         this.expected = expected;
         this.rawTotal = rawTotal;
         this.shippingMethod = shippingMethod;

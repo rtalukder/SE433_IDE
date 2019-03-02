@@ -17,7 +17,7 @@ import java.util.Collection;
 import static edu.depaul.se433.Orders.ShippingMethod;
 
 @RunWith(Parameterized.class)
-public class OrdersTestBoundaries{
+public class OrdersBoundariesTest {
     private final double delta = .00001;
 
     @Parameterized.Parameters
@@ -43,7 +43,7 @@ public class OrdersTestBoundaries{
     private Orders.ShippingMethod shippingMethod;   // input value
     private String destinationState;                // input value
 
-    public OrdersTestBoundaries(double expected, double rawTotal, Orders.ShippingMethod shippingMethod, String destinationState) {
+    public OrdersBoundariesTest(double expected, double rawTotal, Orders.ShippingMethod shippingMethod, String destinationState) {
         this.expected = expected;
         this.rawTotal = rawTotal;
         this.shippingMethod = shippingMethod;
