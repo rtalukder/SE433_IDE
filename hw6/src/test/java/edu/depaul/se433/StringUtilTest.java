@@ -21,19 +21,19 @@ public class StringUtilTest {
     public static Collection<Object[]> data() {
         return Arrays.asList(new String[][] {
                 // expected, input value
-                { "Cat",        "Cats" },
-                { "Bus",        "Busses" },
-                { "Fez",        "Fezzes" },
-                { "Wife",       "Wives" },
-                { "Puppy",      "Puppies" },
-                { "Potato",     "Potatoes" },
-                { "Focus",      "Foci" },
-                { "Ellipsis",   "Ellipses" },
-                { "Criterion",  "Criteria" },
-                { "Opera",      "Opus" },           // boundary
-                { "Lasagna",    "Lasagne" },        // boundary
-                { "Prius",      "Prii" },           // boundary
-                { "Spaghetto",  "Spaghetti" },      // boundary
+                { "Cats",      "Cat" },
+                { "Bus",       "Bus" },
+                { "Fezzez",    "Fez" },
+                { "Wives",     "Wife" },
+                { "Puppies",   "Puppy" },
+                { "Potatoes",  "Potato" },
+                { "Foci",      "Focus" },
+                { "Ellipses",  "Ellipse" },
+                { "Criteria",  "Criterion" },
+                { "Opus",      "Opera" },           // boundary
+                { "Lasagne",   "Lasagna" },        // boundary
+                { "Prii",      "Prius" },           // boundary
+                { "Spaghetti", "Spaghetto" },      // boundary
 
         });
     }
