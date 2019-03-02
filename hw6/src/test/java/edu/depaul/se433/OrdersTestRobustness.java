@@ -23,7 +23,7 @@ public class OrdersTestRobustness {
     @Parameterized.Parameters
     public static Collection<Object[]> data() throws IllegalArgumentException {
         return Arrays.asList(new Object[][] {
-                // expected, input value
+                // raw total, shipping method, destination state
                 { 100, ShippingMethod.Standard, "Puerto Rico"},
                 { 100, ShippingMethod.NextDay, "Australia"},
                 { 100, ShippingMethod.Standard, "New Zealand"},
@@ -46,7 +46,7 @@ public class OrdersTestRobustness {
     }
 
     @Test
-    public void Calculate_Total_Strong_Normal() throws IllegalArgumentException{
+    public void Calculate_Total_Robustness() throws IllegalArgumentException{
         try{
             Orders.calculateTotal(rawTotal, shippingMethod, destinationState);
             fail("Shouldn't be able to get here");

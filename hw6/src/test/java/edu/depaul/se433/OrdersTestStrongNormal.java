@@ -23,7 +23,7 @@ public class OrdersTestStrongNormal{
     @Parameterized.Parameters
     public static Collection<Object[]> data() throws IllegalArgumentException {
         return Arrays.asList(new Object[][] {
-                // expected, input value
+                // expected, raw total, shipping method, destination state
                 { 40.00,  30,  ShippingMethod.Standard, "Iowa"},           // pass
                 { 60.00,  35,  ShippingMethod.NextDay, "Wisconsin"},       // pass
                 { 60.00,  60,  ShippingMethod.Standard, "Michigan"},       // pass - customer chooses free standard

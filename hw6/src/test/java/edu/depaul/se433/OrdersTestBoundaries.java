@@ -23,7 +23,7 @@ public class OrdersTestBoundaries{
     @Parameterized.Parameters
     public static Collection<Object[]> data() throws IllegalArgumentException {
         return Arrays.asList(new Object[][] {
-                // expected, input value
+                // expected, raw total, shipping method, destination state
                 { 10.01,   0.01,  ShippingMethod.Standard, "Iowa"},
                 { 25.01,    .01,  ShippingMethod.NextDay, "Wisconsin"},
                 { 59.99,  49.99,  ShippingMethod.Standard, "Michigan"},
@@ -51,7 +51,7 @@ public class OrdersTestBoundaries{
     }
 
     @Test
-    public void Calculate_Total_Strong_Normal(){
+    public void Calculate_Total_Boundaries(){
         assertEquals(expected, Orders.calculateTotal(rawTotal, shippingMethod, destinationState), delta);
     }
 }
