@@ -31,7 +31,7 @@
                 <artifactId>maven-assembly-plugin</artifactId>
                 <version>3.1.0</version>
                 <configuration>
-                    <finalName>SE433-DVW-Week6</finalName>
+                    <finalName>SE433-Homework8-RaquibTalukder</finalName>
                     <appendAssemblyId>false</appendAssemblyId>
 
                     <!--
